@@ -1,5 +1,4 @@
 import React from "react";
-import LastRequest from "./LastRequest.js";
 import Form from "./Form.js";
 import "./App.css";
 
