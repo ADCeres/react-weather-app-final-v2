@@ -62,8 +62,8 @@ function Form(props) {
         <div class="footer">
           Coded by Alyson Felton
           <br />
-          <a href="https://github.com/ADCeres/final-project-weather-app">
-            https://github.com/ADCeres/final-project-weather-app
+          <a href="https://github.com/ADCeres/react-weather-app-final-v2">
+            https://github.com/ADCeres/react-weather-app-final-v2
           </a>
           <br />
           *Sunrise/Sunset times are returned relative to end-user timestamp, not
