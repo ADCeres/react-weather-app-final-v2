@@ -1,0 +1,245 @@
+body {
+  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+h1,
+h2,
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+form input {
+  border: 1px solid black;
+  font-family: "Roboto Slab", serif;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 10px 0px 0px;
+  padding: 10px 10px;
+  font-weight: bold;
+}
+
+.card-body,
+.card-text,
+.cat-results,
+.categories,
+.forecast-day,
+.reduce-padding,
+.footer,
+.row {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+.row,
+.card-body {
+  font-size: 12px;
+  text-align: center;
+}
+
+.forecast-day,
+.card-text,
+.converter,
+.subtext {
+  font-family: "Roboto Slab", serif;
+  font-size: 12px;
+}
+
+.categories,
+.cat-results {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer,
+.sub-details,
+#cur-emoji-desc {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 12px;
+}
+
+.reduce-padding,
+.col-2 {
+  text-align: center;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  padding: 0px 5px;
+}
+
+.col-3 {
+  text-align: left;
+}
+
+.card-text {
+  padding-bottom: 10px;
+}
+
+.cat-results {
+  font-weight: normal;
+  text-align: left;
+}
+
+.container {
+  box-shadow: 0px 0px 15px rgb(36, 34, 34);
+  border: 1px solid rgb(11, 11, 43);
+  padding: 10px 20px 20px 20px;
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  border-radius: 15px;
+  margin: 0px auto;
+  max-width: 550px;
+  margin-top: 15px;
+  font-size: 12px;
+  width: 100%;
+}
+
+.converter {
+  padding: 5px 0px;
+  margin: 0px auto;
+  margin-top: 2px;
+  height: 45%;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+}
+
+.hrNew {
+  border-top: 1px dashed gray;
+  background: #f7edb4;
+  text-align: center;
+  margin: 20px auto;
+  opacity: 75%;
+  width: 90%;
+}
+
+.sub-details {
+  padding-left: 5px;
+}
+
+.converter,
+#current-location-button,
+#entry-line,
+#submit-button {
+  box-shadow: 0px 0px 4px black;
+}
+
+.converter:hover,
+#submit-button:hover,
+#current-location-button:hover {
+  background: #485563c0;
+}
+
+#forecast-desc,
+#forecast-temp-min,
+#forecast-temp-max {
+  font-weight: normal;
+  font-size: 10px;
+}
+
+#cur-day-time,
+#cur-emoji,
+#cur-emoji-desc,
+#current-location-button,
+#cur-temp,
+#forecast-temp-min,
+#forecast-temp-max,
+#forecast-emoji {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+#cur-emoji,
+#cur-temp {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+
+#entry-line,
+#cur-emoji,
+#current-location-button,
+#submit-button {
+  vertical-align: middle;
+}
+
+#current-location-button,
+#submit-button {
+  transition: all 150ms ease;
+  font-family: "Roboto Slab";
+  font-weight: normal;
+  background: #fff;
+  font-size: 15px;
+}
+
+#cur-day-time {
+  font-family: monospace;
+  font-size: 12px;
+  margin-left: 35px;
+  text-align: left;
+}
+
+#cur-emoji {
+  font-size: 80px;
+}
+
+#cur-emoji-desc {
+  margin-top: 5px;
+}
+
+#current-location-button {
+  padding-bottom: 3px;
+  border-radius: 50%;
+  margin-right: 5px;
+  max-height: 40px;
+  width: 5%;
+}
+
+#entry-line {
+  background: #fff;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 45px;
+  max-height: 40px;
+  margin-right: 5px;
+  padding: 2px 10px;
+  width: 64%;
+}
+
+#forecast-emoji {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 40px;
+}
+
+#forecast-temp-max {
+  font-weight: bold;
+}
+
+#submit-button {
+  padding: 2px 10px;
+  line-height: 35px;
+}
