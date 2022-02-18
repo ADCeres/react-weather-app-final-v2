@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherCurrent from "./WeatherCurrent.js";
+import WeatherForecast from "./WeatherForecast.js";
 import LastRequest from "./LastRequest.js";
 
 function Form(props) {
@@ -15,7 +16,8 @@ function Form(props) {
     console.log(response);
     setWeatherData({
       ready: true,
-      coordinates: response.data.coord,
+      longitude: response.data.coord.lon,
+      latitude: response.data.coord.lat,
       temperature: response.data.main.temp,
       feel: response.data.main.feels_like,
       humidity: response.data.main.humidity,
@@ -59,7 +61,8 @@ function Form(props) {
           />
         </form>
         <WeatherCurrent weather={weatherData} />
-        <div class="footer">
+        <WeatherForecast weather={weatherData} />
+        <div className="footer">
           Coded by Alyson Felton
           <br />
           <a href="https://github.com/ADCeres/react-weather-app-final-v2">
