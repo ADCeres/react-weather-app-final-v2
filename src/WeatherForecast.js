@@ -32,10 +32,9 @@ function WeatherForecast(props) {
   if (loaded) {
     return (
       <div>
-        {" "}
+        <h2>6 Day Forecast</h2>
         <div className="col-2">
           <span className="forecast-day">
-            {" "}
             {getForecastLabel(forecast[0].dt)}
           </span>
           <div className="row">
@@ -52,7 +51,7 @@ function WeatherForecast(props) {
                 </span>
                 <br />
                 <span id="forecast-temp-max">
-                  {Math.round(forecast[0].temp.max)}°F{" "}
+                  {Math.round(forecast[0].temp.max)}°F
                 </span>
                 {"  "} |
                 <span id="forecast-temp-min">

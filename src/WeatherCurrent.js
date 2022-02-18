@@ -18,11 +18,11 @@ function WeatherCurrent(props) {
         </div>
 
         <div className="col-3">
-          <span id="cur-temp">{Math.round(props.weather.temperature)}°</span>
+          <span id="cur-temp">{Math.round(props.weather.temperature)}°F</span>
           <br />
           <span className="sub-details">
             <span id="cur-temp-max">
-              Feels: {Math.round(props.weather.feel)}°
+              Feels: {Math.round(props.weather.feel)}°F
             </span>
             <span id="cur-temp-feel"></span>
           </span>
