@@ -17,9 +17,8 @@ function WeatherForecast(props) {
   }
 
   function getForecastData(response) {
-    console.log(response);
-    setLoaded(true);
     setForecast(response.data.daily);
+    setLoaded(true);
     console.log(forecast);
   }
 
@@ -40,23 +39,19 @@ function WeatherForecast(props) {
           <div className="row">
             <div className="card-body">
               <p className="card-text subtext">
-                <span id="forecast-emoji">
-                  <UpdateWeatherIcon
-                    data={forecast[0].weather[0].description}
-                  />
-                </span>
+                <span id="forecast-emoji">TBD</span>
                 <br />
                 <span id="forecast-desc">
                   {forecast[0].weather[0].description}
                 </span>
                 <br />
                 <span id="forecast-temp-max">
-                  {Math.round(forecast[0].temp.max)}°F
+                  {Math.round(forecast[0].temp.max)}
                 </span>
                 {"  "} |
                 <span id="forecast-temp-min">
                   {" "}
-                  {Math.round(forecast[0].temp.min)}°F
+                  {Math.round(forecast[0].temp.min)}
                 </span>
               </p>
             </div>
@@ -66,7 +61,7 @@ function WeatherForecast(props) {
     );
   } else {
     searchForecast();
-    return "Is this working? Guess not...";
+    return "Loading Weather Information...";
   }
 }
 

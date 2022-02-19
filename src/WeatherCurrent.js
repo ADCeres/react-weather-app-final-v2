@@ -29,7 +29,9 @@ function WeatherCurrent(props) {
           <br />
           <span className="sub-details">
             <strong>
-              <span id="cur-emoji-desc">{props.weather.description}</span>
+              <span className="cur-emoji-desc">
+                {props.weather.description}
+              </span>
             </strong>
           </span>
         </div>

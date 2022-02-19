@@ -5,17 +5,17 @@ import WeatherForecast from "./WeatherForecast.js";
 import LastRequest from "./LastRequest.js";
 
 function Form(props) {
-  let [city, setCity] = useState(props.defaultCity);
-  let [weatherData, setWeatherData] = useState({ ready: false });
+  const [city, setCity] = useState(props.defaultCity);
+  const [weatherData, setWeatherData] = useState({ loaded: false });
+  console.log(weatherData);
 
   function updateCity(event) {
     setCity(event.target.value);
   }
 
   function getWeatherData(response) {
-    console.log(response);
     setWeatherData({
-      ready: true,
+      loaded: true,
       longitude: response.data.coord.lon,
       latitude: response.data.coord.lat,
       temperature: response.data.main.temp,
@@ -40,13 +40,13 @@ function Form(props) {
     searchWeather();
   }
 
-  if (weatherData.ready) {
+  if (weatherData.loaded) {
     return (
       <div>
         <LastRequest />
         <form>
           <input
-            type="text"
+            type="search"
             placeholder="Enter Name of City Here"
             id="entry-line"
             autoFocus="on"
@@ -78,7 +78,7 @@ function Form(props) {
     );
   } else {
     searchWeather();
-    return "Sure wonder why this isn't working...!!";
+    return "I sure wish this would stop repeating 4+ times!!";
   }
 }
 

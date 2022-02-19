@@ -69,7 +69,7 @@ form input {
 
 .footer,
 .sub-details,
-#cur-emoji-desc {
+.cur-emoji-desc {
   font-family: "Roboto Slab", sans-serif;
   font-size: 12px;
 }
