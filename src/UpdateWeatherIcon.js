@@ -21,6 +21,12 @@ function UpdateWeatherIcon(props) {
     case "light rain":
       return "🌧";
       break;
+    case "moderate rain":
+      return "🌧";
+      break;
+    case "heavy rain":
+      return "🌧";
+      break;
     case "sunny":
       return "☀️";
       break;

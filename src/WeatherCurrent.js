@@ -8,15 +8,6 @@ function WeatherCurrent(props) {
       {" "}
       <h1 id="selected-city">{props.weather.city}</h1>
       <div className="row">
-        <div className="col-1">
-          <button className="converter" id="celsius">
-            C
-          </button>
-          <button className="converter" id="fahrenheit">
-            F
-          </button>
-        </div>
-
         <div className="col-3">
           <span id="cur-temp">{Math.round(props.weather.temperature)}°F</span>
           <br />
@@ -36,7 +27,7 @@ function WeatherCurrent(props) {
           </span>
         </div>
 
-        <div className="col-3">
+        <div className="col-4">
           <br />
           <span id="cur-emoji">
             <UpdateWeatherIcon data={props.weather.description} />

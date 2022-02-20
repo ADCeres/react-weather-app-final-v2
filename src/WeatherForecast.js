@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import UpdateWeatherIcon from "./UpdateWeatherIcon.js";
 import ForecastCard from "./ForecastCard.js";
@@ -20,8 +20,11 @@ function WeatherForecast(props) {
   function getForecastData(response) {
     setForecast(response.data.daily);
     setLoaded(true);
-    console.log(forecast);
   }
+
+  useEffect(() => {
+    setLoaded(false);
+  }, [props]);
 
   function searchForecast() {
     let apiKey = `a20670b64f2243817bd352afb3a3d0b5`;

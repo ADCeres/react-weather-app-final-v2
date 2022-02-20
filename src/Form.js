@@ -61,7 +61,7 @@ function Form(props) {
           />
         </form>
         <WeatherCurrent weather={weatherData} />
-        <WeatherForecast weather={weatherData} loaded={false} />
+        <WeatherForecast weather={weatherData} />
         <div className="footer">
           Coded by Alyson Felton
           <br />
@@ -71,8 +71,6 @@ function Form(props) {
           <br />
           *Sunrise/Sunset times are returned relative to end-user timestamp, not
           look-up city.
-          <br />
-          *Celcius and Fahrenheit converters are not operational yet.
         </div>
       </div>
     );
