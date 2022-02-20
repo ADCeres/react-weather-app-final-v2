@@ -61,7 +61,7 @@ function Form(props) {
           />
         </form>
         <WeatherCurrent weather={weatherData} />
-        <WeatherForecast weather={weatherData} />
+        <WeatherForecast weather={weatherData} loaded={false} />
         <div className="footer">
           Coded by Alyson Felton
           <br />

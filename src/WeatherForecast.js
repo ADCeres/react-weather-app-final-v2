@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import UpdateWeatherIcon from "./UpdateWeatherIcon.js";
+import ForecastCard from "./ForecastCard.js";
 
 function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
@@ -32,31 +33,7 @@ function WeatherForecast(props) {
     return (
       <div>
         <h2>6 Day Forecast</h2>
-        <div className="col-2">
-          <span className="forecast-day">
-            {getForecastLabel(forecast[0].dt)}
-          </span>
-          <div className="row">
-            <div className="card-body">
-              <p className="card-text subtext">
-                <span id="forecast-emoji">TBD</span>
-                <br />
-                <span id="forecast-desc">
-                  {forecast[0].weather[0].description}
-                </span>
-                <br />
-                <span id="forecast-temp-max">
-                  {Math.round(forecast[0].temp.max)}
-                </span>
-                {"  "} |
-                <span id="forecast-temp-min">
-                  {" "}
-                  {Math.round(forecast[0].temp.min)}
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>{" "}
+        <ForecastCard data={forecast} />
       </div>
     );
   } else {
