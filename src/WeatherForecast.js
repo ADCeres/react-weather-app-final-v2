@@ -33,7 +33,26 @@ function WeatherForecast(props) {
     return (
       <div>
         <h2>6 Day Forecast</h2>
-        <ForecastCard data={forecast} />
+        <div className="row">
+          <div className="col-2">
+            <ForecastCard data={forecast[0]} />
+          </div>
+          <div className="col-2">
+            <ForecastCard data={forecast[1]} />
+          </div>
+          <div className="col-2">
+            <ForecastCard data={forecast[2]} />
+          </div>
+          <div className="col-2">
+            <ForecastCard data={forecast[3]} />
+          </div>
+          <div className="col-2">
+            <ForecastCard data={forecast[4]} />
+          </div>
+          <div className="col-2">
+            <ForecastCard data={forecast[5]} />
+          </div>
+        </div>
       </div>
     );
   } else {
