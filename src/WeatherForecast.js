@@ -34,24 +34,15 @@ function WeatherForecast(props) {
       <div>
         <h2>6 Day Forecast</h2>
         <div className="row">
-          <div className="col-2">
-            <ForecastCard data={forecast[0]} />
-          </div>
-          <div className="col-2">
-            <ForecastCard data={forecast[1]} />
-          </div>
-          <div className="col-2">
-            <ForecastCard data={forecast[2]} />
-          </div>
-          <div className="col-2">
-            <ForecastCard data={forecast[3]} />
-          </div>
-          <div className="col-2">
-            <ForecastCard data={forecast[4]} />
-          </div>
-          <div className="col-2">
-            <ForecastCard data={forecast[5]} />
-          </div>
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 6) {
+              return (
+                <div className="col-2" key={index}>
+                  <ForecastCard data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
